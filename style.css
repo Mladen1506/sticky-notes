@@ -22,7 +22,7 @@ body{
   margin-left: 5%;
 }
 .container3{
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 26%;
   left: 40%;
