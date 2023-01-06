@@ -38,6 +38,16 @@ function createNote(){
 
   container2.insertAdjacentElement('beforeend', node0);
 
+  node0.addEventListener("mouseenter", function(){
+    node0.style.transform = 'scale(1.1)';
+  })
+  node0.addEventListener("mouseleave", function(){
+    node0.style.transform = "scale(1)";
+  })
+  node0.addEventListener("dblclick", function(){
+    node0.remove();
+  })
+  document.getElementById("note-text").value = '';
 }
 function margin(){
   var random_margin = ['-5px', '1px', '5px', '10px', '15px', '20px'];
